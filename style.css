@@ -1,0 +1,280 @@
+/* Selectores de tipo */
+* {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #fab1a0;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 98%;
+  top: 1rem;
+  left: 1rem;
+}
+
+header>a {
+  width: 100%;
+  height: 4rem;
+  background-color: #A0E9FA;
+  border: 2px solid black;
+  text-decoration: none;
+  text-align: center;
+  line-height: 4rem;
+  cursor: pointer;
+}
+
+span {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+h1,
+h2,
+h6 {
+  font-family: 'Host Grotesk', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bold;
+}
+
+p,
+a {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+label,
+input,
+textarea {
+  font-size: 1.1rem;
+  border-radius: 0.4rem;
+}
+
+input,
+textarea {
+  border: 1px solid black;
+  background-color: #FDE7E2;
+}
+
+input {
+  padding: 0.5rem;
+}
+
+textarea {
+  padding: 0.6rem;
+  width: 100%;
+  height: 20rem;
+  resize: none;
+}
+
+button {
+  background-color: #F77155;
+  padding: 0.5rem 3rem;
+  margin: 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid black;
+  font-size: 1.1rem;
+}
+
+/* Selectores de ID y de Tipo */
+/* INICIO */
+#inicio {
+  width: 80%;
+  height: 64svh;
+  margin: 0 auto;
+  padding: 17rem 0 5rem;
+}
+
+#inicio img {
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+}
+
+#inicio h1 {
+  font-size: 3rem;
+  margin: 3rem 0;
+}
+
+#inicio p:nth-child(odd) {
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+/* SERVICIOS */
+#servicios {
+  display: flex;
+  gap: 3rem;
+  padding: 2.5rem;
+  text-align: center;
+  margin: 20rem 0;
+}
+
+#servicios div {
+  border: 2px solid black;
+}
+
+#servicios h2 {
+  padding: 1rem;
+  border-bottom: 2px solid black;
+  background-color: #F77155;
+}
+
+#servicios p {
+  margin: 2rem 1.5rem 1.5rem;
+  text-wrap: balance;
+}
+
+#servicios h2,
+#contactenos h2,
+#trabaja h2 {
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+/* PRODUCTOS */
+#productos {
+  margin-bottom: 20rem;
+}
+
+#productos ul {
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem 4rem;
+  display: flex;
+}
+
+#productos li {
+  list-style-type: none;
+  padding: 1rem;
+  position: relative;
+}
+
+#productos img {
+  width: 17rem;
+  height: auto;
+  object-fit: contain;
+}
+
+#productos li:hover .grande {
+  left: 20px;
+  top: -150px;
+}
+
+/* CONTACTENOS */
+#contactenos h2,
+#trabaja h2 {
+  text-align: center;
+  padding: 2rem;
+}
+
+#contactenos {
+  margin: 0 auto;
+  width: 50%;
+}
+
+#contactenos label {
+  text-align: center;
+  margin: 0.3rem auto;
+}
+
+#contactenos input {
+  width: 100%;
+}
+
+#contactenos input::placeholder,
+#contactenos textarea::placeholder {
+  color: #3d4647;
+}
+
+#contactenos button {
+  position: relative;
+  left: 49rem;
+}
+
+/* TRABAJA */
+#trabaja {
+  margin: 10rem 0 3rem;
+}
+
+#trabaja form {
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  column-gap: 5rem;
+  margin-left: 6rem;
+}
+
+#trabaja>div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#trabaja div:nth-child(2) {
+  margin-top: 0.7rem;
+}
+
+#trabaja label {
+  margin: 0.5rem 0;
+}
+
+#trabaja div:nth-child(2)>div {
+  display: flex;
+  margin-left: -1rem;
+}
+
+#trabaja div:nth-child(2) label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  white-space: nowrap;
+}
+
+#trabaja input[type="radio"] {
+  width: 0.2rem;
+  height: 0.2rem;
+  margin-left: 1rem;
+  border: 2px solid black;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+#trabaja input[type="radio"]:checked {
+  background-color: #F77155;
+}
+
+#trabaja button {
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin-top: 2rem;
+  margin-left: -28rem;
+  cursor: pointer;
+}
+
+#fecha {
+  width: 18rem;
+}
+
+/* Selectores de clase y de tipo */
+/* PRODUCTOS */
+.grande {
+  position: absolute;
+  left: -9999px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px 3px rgba(247, 113, 85, 0.3);
+  padding: 1rem;
+}
+
+.grande p {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+.grande button {
+  width: 20%;
+  font-size: 0.8rem;
+}
